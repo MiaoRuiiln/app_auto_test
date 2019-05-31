@@ -24,7 +24,7 @@ def get_login_data():
             fail_list.append((i, login_data.get(i).get("account"), login_data.get(i).get("passwd"),
                               login_data.get(i).get("toast"), login_data.get(i).get("expect_data")))
         else:
-            # 预期成功测试用例 case_num, account, passwd, exp_data
+            # 预期成功测试用例 case_num, account, passwd, exp_data  a
             suc_list.append((i, login_data.get(i).get("account"), login_data.get(i).get("passwd"),
                              login_data.get(i).get("expect_data")))
     return {"suc": suc_list, "fail": fail_list}
